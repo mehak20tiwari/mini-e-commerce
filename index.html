@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>3D Background Shop</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <!-- Background -->
+  <div id="vanta-bg"></div>
+
+  <!-- Content -->
+  <div class="content">
+    <header>
+      <h1>🛍️ My Shop</h1>
+      <button id="cart-btn">Cart 🛒 (<span id="cart-count">0</span>)</button>
+    </header>
+
+    <main class="products-container">
+      <div class="product-card">
+        <img src="https://ae01.alicdn.com/kf/S84ee524de16b42a4899cb6a4b6f41c60a.jpg" alt="T-shirt" />
+        <h2>T-shirt</h2>
+        <p>₹499</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="https://img.guess.com/image/upload/f_auto,q_auto,dpr_1.5,w_500,c_limit/v1/NA/Asset/North%20America/E-Commerce/Guess/Bug%20Number/10392/G_Site_YC_ContentCenter_Denim_10392_02" alt="Jeans" />
+        <h2>Jeans</h2>
+        <p>₹999</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="https://assets.myntassets.com/h_1440,q_100,w_1080/v1/assets/images/23079364/2023/8/31/3fb79283-873c-4fa5-8747-f98d7ea48e091693466409208-The-Roadster-Lifestyle-Co-Women-White--Pink-Colourblocked-Li-1.jpg" alt="Shoes" />
+        <h2>Shoes</h2>
+        <p>₹1499</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+    </main>
+  </div>
+
+  <!-- Cart Modal -->
+  <div id="cart-modal" class="hidden">
+    <div class="modal-content">
+      <h2>Your Cart</h2>
+      <ul id="cart-items"></ul>
+      <div class="total-section">
+        Total: ₹<span id="total-price">0</span>
+      </div>
+      <button id="close-cart">Close Cart</button>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.fog.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
